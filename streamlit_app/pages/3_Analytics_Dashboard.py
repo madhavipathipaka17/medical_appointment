@@ -1,20 +1,41 @@
-# 3_Analytics_Dashboard.py
-
 import streamlit as st
-import pandas as pd
-from pathlib import Path
 
-# -----------------------------
-# LOAD DATA (PUT IT HERE)
-# -----------------------------
-BASE_DIR = Path(__file__).resolve().parent
-CSV_PATH = BASE_DIR.parent.parent / "/Users/venkatakrishnavanaparthi/Desktop/MedicalAppointment/cleaned_data/medical_appointment_cleaned .csv"
+st.set_page_config(page_title="Analytics Dashboard", layout="wide")
 
-df = pd.read_csv(CSV_PATH)
+st.title("📊 Analytics Dashboard")
 
-# -----------------------------
-# NOW USE df BELOW
-# -----------------------------
-st.title("Analytics Dashboard")
+st.markdown("## 🔍 Key Business Insights")
 
-st.dataframe(df.head())
+
+
+
+st.subheader("🚫 1.No-Show Prediction")
+
+st.markdown("""
+    - Specialty is the strongest driver of no-show behavior.
+                
+    - Young adults exhibit the highest no-show rates (~47%).
+                
+    - SMS reminders show minimal impact on attendance.
+                
+    - Certain locations consistently experience higher no-show rates.
+    """)
+
+
+st.subheader("📈 2.Demand Forecasting")
+
+st.markdown("""
+    - Specialty mix is the primary driver of appointment demand.
+                
+    - Thursday records the highest average demand.
+                
+    - Demand distribution is highly skewed, with occasional extreme spikes.
+                
+    - Weather variables contribute minimal forecasting value.
+    """)
+st.title("👩‍💻 Creator of this Project")
+st.subheader("Developed by:")
+st.markdown("***Madhavi Pathipaka***")
+
+st.markdown("### 🛠 Skills:")
+st.markdown("Python, Pandas, Data Analysis,Machine learning, Streamlit")

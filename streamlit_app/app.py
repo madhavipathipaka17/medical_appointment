@@ -22,6 +22,3 @@ This system helps healthcare providers:
 ✅ Improve scheduling efficiency
 """)
 
-st.info(
-    "Use the left sidebar to navigate through the application."
-)
