@@ -13,6 +13,7 @@ st.title("🏥 Hospital Demand Prediction System")
 
 st.write("Fill patient + appointment details to predict demand.")
 
+
 # -----------------------------
 # MAPPINGS
 # -----------------------------
